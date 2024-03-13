@@ -2,18 +2,18 @@
 
 ## Description
 
-Express Rate Limit Monitor is an npm package that provides rate limiting functionality for Express.js applications along with monitoring and logging capabilities. It uses the `express-rate-limit` middleware for rate limiting and logs rate-limited requests to a MongoDB database.
+Express Rate Limit Monitor is an npm package that provides rate limiting functionality for Express.js applications along with monitoring and logging capabilities. It uses the `gl-express-rate-limiter` middleware for rate limiting and logs rate-limited requests to a MongoDB database.
 
 ## Installation
 
 First, install the package and its dependencies using npm:
 
 ```bash
-npm install express-rate-limit-monitor express express-rate-limit mongoose
+npm install gl-rate-limit-monitor express gl-express-rate-limiter mongoose
 
-const ExpressRateLimitMonitor = require('express-rate-limit-monitor');
+const RateLimitMonitor = require('gl-rate-limit-monitor');
 
-const rateLimitMonitor = new ExpressRateLimitMonitor({
+const rateLimitMonitor = new RateLimitMonitor({
     windowMs: 60 * 1000, // 1 minute
     max: 100,
     message: 'Too many requests, please try again later.',
