@@ -1,6 +1,6 @@
 {
   "name": "gl-rate-limit-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rate limiting monitor",
   "main": "index.js",
   "author": "antonSavk",
